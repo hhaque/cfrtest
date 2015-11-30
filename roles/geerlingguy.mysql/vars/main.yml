@@ -1,0 +1,18 @@
+---
+__mysql_daemon: mysqld
+__mysql_packages:
+  - mysql
+  - mysql-server
+__mysql_slow_query_log_file: /var/log/mysql-slow.log
+mysql_config_file: /etc/my.cnf
+mysql_socket: /var/lib/mysql/mysql.sock
+mysql_root_password: "supersecure"
+mysql_databases:
+  - name: example_db
+    encoding: latin1
+    collation: latin1_general_ci
+mysql_users:
+  - name: cfrtest
+    host: "%"
+    password: "cfrtest"
+    priv: "example_db.*:ALL"

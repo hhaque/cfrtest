@@ -1,0 +1,7 @@
+---
+tasks:
+  - set_fact:
+      ansible_distribution_major_version: "6"
+
+    vars:
+        ansible_distribution_major_version: "6" 

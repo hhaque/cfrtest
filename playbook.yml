@@ -1,0 +1,20 @@
+---
+- hosts: all
+  sudo: true
+  roles:
+    - { role: geerlingguy.repo-epel }
+    - { role: geerlingguy.repo-remi }
+    - { role: geerlingguy.git } 
+    - { role: geerlingguy.mysql }
+    - { role: geerlingguy.apache }
+    - { role: geerlingguy.php }
+    - { role: geerlingguy.varnish }
+    - { role: geerlingguy.memcached }
+    - { role: geerlingguy.java }
+    - { role: geerlingguy.elasticsearch }
+    - { role: geerlingguy.composer }
+    - { role: geerlingguy.drush } 
+     
+    
+
+
